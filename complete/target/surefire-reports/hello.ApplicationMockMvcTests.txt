@@ -1,0 +1,109 @@
+-------------------------------------------------------------------------------
+Test set: hello.ApplicationMockMvcTests
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 16.293 s <<< FAILURE! - in hello.ApplicationMockMvcTests
+checkPersonInfoWhenNameTooShortThenFailure(hello.ApplicationMockMvcTests)  Time elapsed: 2.989 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/form.html]" - line 44, col 10)
+	at hello.ApplicationMockMvcTests.checkPersonInfoWhenNameTooShortThenFailure(ApplicationMockMvcTests.java:53)
+Caused by: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/form.html]" - line 44, col 10)
+	at hello.ApplicationMockMvcTests.checkPersonInfoWhenNameTooShortThenFailure(ApplicationMockMvcTests.java:53)
+Caused by: org.attoparser.ParseException: 
+(Line = 44, Column = 10) Incomplete structure: "<option th:each="i : ${#numbers.sequence(0, 100)}" th:value="${i}" th:text="${i}""></option>
+					</select>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
+"
+	at hello.ApplicationMockMvcTests.checkPersonInfoWhenNameTooShortThenFailure(ApplicationMockMvcTests.java:53)
+
+checkPersonInfoWhenValidRequestThenSuccess(hello.ApplicationMockMvcTests)  Time elapsed: 0.147 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/form.html]" - line 44, col 10)
+	at hello.ApplicationMockMvcTests.checkPersonInfoWhenValidRequestThenSuccess(ApplicationMockMvcTests.java:82)
+Caused by: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/form.html]" - line 44, col 10)
+	at hello.ApplicationMockMvcTests.checkPersonInfoWhenValidRequestThenSuccess(ApplicationMockMvcTests.java:82)
+Caused by: org.attoparser.ParseException: 
+(Line = 44, Column = 10) Incomplete structure: "<option th:each="i : ${#numbers.sequence(0, 100)}" th:value="${i}" th:text="${i}""></option>
+					</select>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
+"
+	at hello.ApplicationMockMvcTests.checkPersonInfoWhenValidRequestThenSuccess(ApplicationMockMvcTests.java:82)
+
+checkPersonInfoWhenAgeTooYoungThenFailure(hello.ApplicationMockMvcTests)  Time elapsed: 0.065 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/form.html]" - line 44, col 10)
+	at hello.ApplicationMockMvcTests.checkPersonInfoWhenAgeTooYoungThenFailure(ApplicationMockMvcTests.java:72)
+Caused by: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/form.html]" - line 44, col 10)
+	at hello.ApplicationMockMvcTests.checkPersonInfoWhenAgeTooYoungThenFailure(ApplicationMockMvcTests.java:72)
+Caused by: org.attoparser.ParseException: 
+(Line = 44, Column = 10) Incomplete structure: "<option th:each="i : ${#numbers.sequence(0, 100)}" th:value="${i}" th:text="${i}""></option>
+					</select>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
+"
+	at hello.ApplicationMockMvcTests.checkPersonInfoWhenAgeTooYoungThenFailure(ApplicationMockMvcTests.java:72)
+
+checkPersonInfoWhenAgeMissingThenFailure(hello.ApplicationMockMvcTests)  Time elapsed: 0.221 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/form.html]" - line 44, col 10)
+	at hello.ApplicationMockMvcTests.checkPersonInfoWhenAgeMissingThenFailure(ApplicationMockMvcTests.java:62)
+Caused by: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/form.html]" - line 44, col 10)
+	at hello.ApplicationMockMvcTests.checkPersonInfoWhenAgeMissingThenFailure(ApplicationMockMvcTests.java:62)
+Caused by: org.attoparser.ParseException: 
+(Line = 44, Column = 10) Incomplete structure: "<option th:each="i : ${#numbers.sequence(0, 100)}" th:value="${i}" th:text="${i}""></option>
+					</select>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
+"
+	at hello.ApplicationMockMvcTests.checkPersonInfoWhenAgeMissingThenFailure(ApplicationMockMvcTests.java:62)
+
+checkPersonInfoWhenNameMissingNameThenFailure(hello.ApplicationMockMvcTests)  Time elapsed: 0.065 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/form.html]" - line 44, col 10)
+	at hello.ApplicationMockMvcTests.checkPersonInfoWhenNameMissingNameThenFailure(ApplicationMockMvcTests.java:43)
+Caused by: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/form.html]" - line 44, col 10)
+	at hello.ApplicationMockMvcTests.checkPersonInfoWhenNameMissingNameThenFailure(ApplicationMockMvcTests.java:43)
+Caused by: org.attoparser.ParseException: 
+(Line = 44, Column = 10) Incomplete structure: "<option th:each="i : ${#numbers.sequence(0, 100)}" th:value="${i}" th:text="${i}""></option>
+					</select>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
+"
+	at hello.ApplicationMockMvcTests.checkPersonInfoWhenNameMissingNameThenFailure(ApplicationMockMvcTests.java:43)
+

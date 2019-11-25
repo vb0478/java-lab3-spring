@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+    <body>
+        <form action="#" th:action="@{/}" th:object="${user}" method="post">
+            <table>
+                <tr>
+                    <td>Id:</td>
+                    <td><input type="text" th:field="*{id}" /></td>
+                    <td th:if="${#fields.hasErrors('id')}" th:errors="*{id}">Id Error</td>
+                </tr>
+                <tr>
+                    <td>FirstName:</td>
+                    <td><input type="text" th:field="*{first_name}" /></td>
+                    <td th:if="${#fields.hasErrors('first_name')}" th:errors="*{first_name}">FirstName Error</td>
+                </tr>
+                <tr>
+                    <td>LastName:</td>
+                    <td><input type="text" th:field="*{last_name}" /></td>
+                    <td th:if="${#fields.hasErrors('last_name')}" th:errors="*{last_name}">LastName Error</td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td><input type="text" th:field="*{age}" /></td>
+                    <td th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age Error</td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                    <select th:field="*{sex}">
+    					<option th:value="'Male'" th:text="Male">M</option>
+    					<option th:value="'Female'" th:text="Female">F</option>
+					</select>
+					</td>                  
+         
+                </tr>
+				<tr>
+                    <td>Country:</td>
+                    <td>
+                    <select th:field="*{country}">
+                        <option th:each="state : ${T(hello.User.COUNTRIES).values()}"
+                                th:value="${state}"
+                                th:text="${state}">
+                        </option>
+					</select>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
